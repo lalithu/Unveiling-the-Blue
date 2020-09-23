@@ -103,15 +103,16 @@ body {
     font-size: 1.25em;
     font-weight: bold;
     text-transform: uppercase;
+    
     padding: 4px;
-    background: linear-gradient(to right, black 20%, #003EFF 40%, #003EFF 60%, black 80%);
+    background: linear-gradient(to right, black, dodgerblue 20%, mediumspringgreen 40%, gold 60%, orangered 80%, black);
     background-size: 200% auto;
     color: #000;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: blueblue 1s linear infinite;
+    animation: blueblue 2.25s linear infinite;
 
 	/* color: #f35626;
 	background-image: -webkit-linear-gradient(90deg, #f35626, #feab3a);
@@ -163,19 +164,19 @@ body {
 }
 
 .nav-link-wrapper:hover {
-    border-bottom: 2px solid orangered;
+    border-bottom: 2px solid dodgerblue;
 }
 
 .logo:hover {
-    border-bottom: 2px solid #003EFF;
+    border-bottom: 2px solid dodgerblue;
 }
 
 .nav-link-wrapper a:hover {
-    color: orangered;
+    color: dodgerblue;
 }
 
 .logo a:hover {
-    color: #003EFF;
+    color: dodgerblue;
 }
 
 .burger {
@@ -198,7 +199,7 @@ body {
     }
     
     .right-side {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.875);
         border: 1px solid black;
         position: absolute;
         right: 0px;
@@ -214,6 +215,7 @@ body {
         opacity: 0;
         visibility: hidden;
         overflow-x: hidden;
+        box-shadow: -20px 0px 60px dodgerblue;
     }
 
     .right-side > div {
