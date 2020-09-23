@@ -137,7 +137,7 @@ body {
 
 .nav-link-wrapper {
     height: 20px;
-    padding: 2px;
+    padding: 5px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
 }
@@ -190,7 +190,7 @@ body {
     transition: 0.375s ease;
 }
 
-@media screen and (max-width: 870px) {    
+@media screen and (max-width: 910px) {    
     body {
         overflow-x: hidden;
         position: relative;
