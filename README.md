@@ -1,2 +1,2 @@
-# Unveiling the Blue by Lalit Uriti
+# Unveiling the Blue by Lalith Uriti
  
