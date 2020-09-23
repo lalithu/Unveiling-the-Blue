@@ -103,7 +103,7 @@ body {
     font-size: 1.25em;
     font-weight: bold;
     text-transform: uppercase;
-
+    padding: 4px;
     background: linear-gradient(to right, black 20%, #003EFF 40%, #003EFF 60%, black 80%);
     background-size: 200% auto;
     color: #000;
