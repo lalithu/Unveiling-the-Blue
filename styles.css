@@ -174,6 +174,7 @@ body {
         width: 200px;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        visibility: hidden;
     }
 
     .right-side > div {
@@ -220,6 +221,7 @@ body {
 }
 .nav-active {
     transform: translateX(0%);
+    visibility: visible;
 }
 
 .toggle .line1 {
