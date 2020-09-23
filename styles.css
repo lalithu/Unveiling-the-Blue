@@ -152,7 +152,7 @@ body {
 }
 
 
-@media screen and (max-width: 3000px) {    
+@media screen and (max-width: 870px) {    
     body {
         overflow-x: hidden;
     }
@@ -171,6 +171,7 @@ body {
         width: 200px;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        opacity: 1;
     }
 
     .right-side > div {
@@ -217,7 +218,7 @@ body {
 }
 .nav-active {
     transform: translateX(0%);
-    display: none;
+    opacity: 0;
 }
 
 .toggle .line1 {
