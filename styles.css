@@ -151,13 +151,11 @@ body {
     transition: 0.375s ease;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 @media screen and (max-width: 870px) {    
     body {
         overflow-x: hidden;
+        position: relative;
+        width: 100%;
     }
     
     .right-side {
@@ -174,7 +172,6 @@ body {
         width: 200px;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
-        visibility: hidden;
     }
 
     .right-side > div {
@@ -221,7 +218,6 @@ body {
 }
 .nav-active {
     transform: translateX(0%);
-    visibility: visible;
 }
 
 .toggle .line1 {
