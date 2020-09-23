@@ -151,6 +151,9 @@ body {
     transition: 0.375s ease;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 @media screen and (max-width: 870px) {    
     body {
