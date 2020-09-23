@@ -254,12 +254,16 @@ body {
         margin: 6px;
         transition: 0.5s ease;
     }
+
+    .right-side {
+        top: 73px;
+    }
 }
 
 @media screen and (max-width: 375px) {    
     .right-side {
         height: 300px;
-        width: 50%;
+        width: 200;
     }
 
     .right-side > div {
