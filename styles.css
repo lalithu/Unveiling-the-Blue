@@ -1,0 +1,345 @@
+@font-face {
+    src: url(fonts/NimbusSansT-RegularCondensed.otf);
+    font-family: nimbus;
+}
+
+@font-face {
+    src: url(fonts/NimbusSansT-BoldCondensed.otf);
+    font-family: nimbus-bold;
+}
+
+/* Master Styles */
+body {
+    margin: 0px; 
+    width: 100wh;
+	height: 90vh;
+	background: linear-gradient(90deg, #FF2525 0%, #F0F2F0, #002DD0 100%);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav Styles */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.right-side {
+    display: flex;
+}
+
+.left-side-image {
+    display: flex;
+}
+
+.nav-wrapper > .right-side > div {
+    font-family: nimbus;
+    font-style: italic;
+    margin-left: 30px;
+    font-size: 1em;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.nav-wrapper > .left-side-image > div {
+    font-family: nimbus-bold;
+    font-style: italic;
+    letter-spacing: 1.25;
+    margin-right: 30px;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 20px;
+    padding: 2px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.logo {
+    height: 24px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+    
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+    
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 2px solid orangered;
+}
+
+.logo:hover {
+    border-bottom: 2px solid #003EFF;
+}
+
+.nav-link-wrapper a:hover {
+    color: orangered;
+}
+
+.logo a:hover {
+    color: #003EFF;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px;
+    transition: 0.375s ease;
+}
+
+
+@media screen and (max-width: 870px) {    
+    body {
+        overflow-x: hidden;
+    }
+    
+    .right-side {
+        background-color: rgba(255, 255, 255, 0.625);
+        border: 1px solid black;
+        position: absolute;
+        right: 0px;
+        height: 398px;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        justify-content: center;
+        width: 200px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .right-side > div {
+        padding: 20px;
+        height:  8px;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .logo {
+        padding: 4px 0px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {    
+    .home-image-wrapper, .home-image-wrapper-About, .home-image-wrapper-POW, .home-image-wrapper-Blog, .home-image-wrapper-Astro, .home-image-wrapper-SpaceX {
+        zoom: 40%;
+        background-position: center;
+    }
+
+    .logo {
+        height: 24px;
+        font-size: 5px;
+        padding: 1px;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.5s;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 2px;
+        background-color: black;
+        margin: 6px;
+        transition: 0.5s ease;
+    }
+}
+
+@media screen and (max-width: 845px) { 
+    
+}
+.nav-active {
+    transform: translateX(0%);
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.home-image-wrapper {
+    height: 400px;
+    width: 100%;
+    background-image: url(images/milkyway2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: center;
+        
+} 
+
+.home-image-wrapper-SpaceX {
+    height: 400px;
+    width: 100%;
+    background-image: url(images/nasa6.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: center ;      
+} 
+
+.home-image-wrapper-Astro {
+    height: 400px;
+    width: 100%;
+    background-image: url(images/nasa5.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: center ;    
+} 
+
+.home-image-wrapper-Blog {
+    height: 400px;
+    width: 100%;
+    background-image: url(images/nasa2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: center ;      
+} 
+
+.home-image-wrapper-About {
+    height: 400px;
+    width: 100%;
+    background-image: url(images/moon.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: center ;    
+} 
+
+.home-image-wrapper-POW {
+    height: 400px;
+    width: 100%;
+    background-image: url(images/nasa4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: center ;    
+} 
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+    padding: 10px;
+}
+
+article * {
+    grid-column: start/end ;
+}
+
+@media (max-width: 8.5in) {
+    article {    
+        grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr;
+    }
+}
+
+img {
+    width: 100%
+}
+
+h1 {
+    margin: 5px;
+    padding: 5px;
+    font-family: nimbus;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.036rem;
+    font-weight: 900;
+}
+
+p {
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Spectral', serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.bois {
+    grid-column: 4/5;
+    border: solid black;
+}
+
+
+
+
+
