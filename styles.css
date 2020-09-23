@@ -11,17 +11,18 @@
 /* Master Styles */
 body {
     margin: 0px; 
-    width: 100wh;
-	height: 90vh;
-	background: linear-gradient(90deg, #FF2525 0%, #F0F2F0, #002DD0 100%);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+	/*background: linear-gradient(90deg, #FF2525 0%, #F0F2F0, #002DD0 100%);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
     animation: Gradient 15s ease infinite;
-    overflow-x: hidden;
+    overflow-x: hidden;*/
 }
 
-
+/*
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
@@ -62,16 +63,19 @@ body {
     display: grid;
     grid-template-columns: 1fr;
 }
+*/
 
 /* Nav Styles */
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    overflow-x: hidden;
 }
 
 .right-side {
     display: flex;
+    overflow-x: hidden;
 }
 
 .left-side-image {
@@ -160,11 +164,11 @@ body {
     }
     
     .right-side {
-        background-color: rgba(255, 255, 255, 0.625);
+        background-color: white;
         border: 1px solid black;
         position: absolute;
         right: 0px;
-        height: 398px;
+        height: 100%;
         top: 70px;
         display: flex;
         flex-direction: column;
@@ -173,11 +177,13 @@ body {
         width: 200px;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        overflow-x: hidden;
     }
 
     .right-side > div {
         padding: 20px;
         height:  8px;
+        overflow-x: hidden;
     }
 
     .burger {
@@ -193,7 +199,7 @@ body {
 
 @media screen and (max-width: 600px) {    
     .home-image-wrapper, .home-image-wrapper-About, .home-image-wrapper-POW, .home-image-wrapper-Blog, .home-image-wrapper-Astro, .home-image-wrapper-SpaceX {
-        zoom: 40%;
+        zoom: 60%;
         background-position: center;
     }
 
@@ -214,11 +220,9 @@ body {
     }
 }
 
-@media screen and (max-width: 845px) { 
-    
-}
 .nav-active {
     transform: translateX(0%);
+    overflow-x: hidden;
 }
 
 .toggle .line1 {
