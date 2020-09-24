@@ -201,26 +201,22 @@ body {
     .right-side {
         background-color: dodgerblue;
         border: 1px solid dodgerblue;
-        position: fixed;
+        position: absolute;
         right: 0px;
-        height: 398px;
+        height: 0;
         top: 70px;
         display: flex;
         flex-direction: column;
         align-items: right;
         justify-content: center;
-        width: 50%;
-        transform: translateX(100%); 
-        transition: 1s;
-        /*transition: all 0.325s linear; 
-        opacity: 0;
-        visibility: hidden; */
+        width: 100%;
+        transition: all 1.75s cubic-bezier(0.19, 1, 0.22, 1);
         overflow-x: hidden;
-        box-shadow: -10px 0px 60px dodgerblue;
+        box-shadow: 0px 10px 60px dodgerblue;
     }
 
     .right-side > div {
-        padding: 10px;
+        padding: 18px;
         position: relative;
         overflow-x: hidden;
     }
@@ -228,7 +224,9 @@ body {
     .nav-link-wrapper a {
         color: white;
         text-decoration: none;
-        transition: color 0.5s;
+        transition: color 0.1s;
+        transition: all .125s;
+        opacity: 0; 
     }
 
     .nav-link-wrapper:hover {
@@ -248,6 +246,15 @@ body {
         padding: 4px 0px;
         height: 20px;
     }
+
+    .nav-active {
+        height: 398px;
+    }
+
+    .nav-active .nav-link-wrapper a {
+        opacity: 1; 
+    }
+    
 }
 
 @media screen and (max-width: 600px) {    
@@ -272,25 +279,31 @@ body {
         transition: 0.5s ease;
     }
 
+    .nav-wrapper > .right-side > div {
+
+        font-size: .9em;
+
+
+    }    
+
+    .right-side > div {
+        padding: 9px;
+        position: relative;
+        overflow-x: hidden;
+    }
+
     .right-side {
         top: 73px;
-        height: 198px;
-    }
-}
-
-@media screen and (max-width: 450px) {    
-    .right-side {
-        height: 198px;
-        width: 100%;
+        height: 0;
     }
 
-}
+    .nav-active {
+        height: 198px;
+    }
 
-.nav-active {
-    transform: translateX(0%);
-    position: absolute;
-    /*visibility: visible;
-    opacity: 1; */
+    .nav-active .nav-link-wrapper a {
+        opacity: 1; 
+    }
 }
 
 .toggle .line1 {
