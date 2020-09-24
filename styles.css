@@ -103,7 +103,7 @@ body {
     font-size: 1.25em;
     font-weight: bold;
     text-transform: uppercase;
-    
+
     padding: 4px;
     background: linear-gradient(to right, black, dodgerblue 20%, mediumspringgreen 40%, gold 60%, orangered 80%, black);
     background-size: 200% auto;
@@ -112,7 +112,7 @@ body {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: blueblue 2.25s linear infinite;
+    animation: blueblue 4s linear infinite;
 
 	/* color: #f35626;
 	background-image: -webkit-linear-gradient(90deg, #f35626, #feab3a);
@@ -259,7 +259,7 @@ body {
 
 @media screen and (max-width: 600px) {    
     .home-image-wrapper, .home-image-wrapper-About, .home-image-wrapper-POW, .home-image-wrapper-Blog, .home-image-wrapper-Astro, .home-image-wrapper-SpaceX {
-        zoom: 50%;
+        zoom: 53.75%;
         background-position: center;
     }
 
@@ -280,14 +280,11 @@ body {
     }
 
     .nav-wrapper > .right-side > div {
-
-        font-size: .9em;
-
-
+        font-size: 1em;
     }    
 
     .right-side > div {
-        padding: 9px;
+        padding: 8px;
         position: relative;
         overflow-x: hidden;
     }
@@ -298,7 +295,7 @@ body {
     }
 
     .nav-active {
-        height: 198px;
+        height: 213px;
     }
 
     .nav-active .nav-link-wrapper a {
