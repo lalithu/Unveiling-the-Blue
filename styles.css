@@ -193,15 +193,15 @@ body {
 
 @media screen and (max-width: 910px) {    
     body {
-        overflow-x: hidden !important;
         position: relative;
+        scroll-behavior: auto;
         width: 100%;
     }
     
     .right-side {
         background-color: dodgerblue;
         border: 1px solid dodgerblue;
-        position: absolute;
+        position: fixed;
         right: 0px;
         height: 398px;
         top: 70px;
@@ -209,10 +209,9 @@ body {
         flex-direction: column;
         align-items: right;
         justify-content: center;
-        width: 200px;
+        width: 50%;
         transform: translateX(100%); 
-        transition: 2s;
-        visibility: hidden;
+        transition: 1s;
         /*transition: all 0.325s linear; 
         opacity: 0;
         visibility: hidden; */
@@ -230,7 +229,6 @@ body {
         color: white;
         text-decoration: none;
         transition: color 0.5s;
-        
     }
 
     .nav-link-wrapper:hover {
@@ -276,25 +274,21 @@ body {
 
     .right-side {
         top: 73px;
+        height: 198px;
     }
 }
 
 @media screen and (max-width: 450px) {    
     .right-side {
-        height: 300px;
-        width: 200;
+        height: 198px;
+        width: 100%;
     }
 
-    .right-side > div {
-        padding: 10px;
-        position: relative;
-        overflow-x: hidden;
-    }
 }
 
 .nav-active {
     transform: translateX(0%);
-    visibility: visible;
+    position: absolute;
     /*visibility: visible;
     opacity: 1; */
 }
