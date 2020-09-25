@@ -184,10 +184,10 @@ body {
 }
 
 .burger div {
-    width: 25px;
+    width: 20px;
     height: 2px;
     background-color: black;
-    margin: 6px;
+    margin: 10px;
     transition: 0.375s ease;
 }
 
@@ -204,7 +204,7 @@ body {
         position: absolute;
         right: 0px;
         height: 0;
-        top: 70px;
+        top: 74px;
         display: flex;
         flex-direction: column;
         align-items: right;
@@ -272,10 +272,10 @@ body {
     }
 
     .burger div {
-        width: 25px;
+        width: 20px;
         height: 2px;
         background-color: black;
-        margin: 6px;
+        margin: 10px;
         transition: 0.5s ease;
     }
 
@@ -290,7 +290,7 @@ body {
     }
 
     .right-side {
-        top: 73px;
+        top: 74px;
         height: 0;
     }
 
@@ -304,15 +304,17 @@ body {
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-2.5px, 6px);
+    background-color: dodgerblue;
 }
+
+/*.toggle .line2 {
+    opacity: 0;
+} */
 
 .toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-2.5px, -6px);
+    background-color: dodgerblue;
 }
 
 .footer {
