@@ -1,24 +1,24 @@
 @font-face {
-    src: url(fonts/NimbusSansT-RegularCondensed.otf);
-    font-family: nimbus;
+  src: url(fonts/NimbusSansT-RegularCondensed.otf);
+  font-family: nimbus;
 }
 
 @font-face {
-    src: url(fonts/NimbusSansT-BoldCondensed.otf);
-    font-family: nimbus-bold;
+  src: url(fonts/NimbusSansT-BoldCondensed.otf);
+  font-family: nimbus-bold;
 }
 
 /* Master Styles */
 .site-wrapper {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 body {
-    margin: 0px; 
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-/*  background: linear-gradient(90deg, #FF2525 0%, #F0F2F0, #002DD0 100%);
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  /*  background: linear-gradient(90deg, #FF2525 0%, #F0F2F0, #002DD0 100%);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -71,50 +71,58 @@ body {
 
 /* Nav Styles */
 .nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    overflow-x: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  overflow-x: hidden;
 }
 
 .right-side {
-    display: flex;
-    overflow-x: hidden;
+  display: flex;
+  overflow-x: hidden;
 }
 
 .left-side-image {
-    display: flex;
+  display: flex;
 }
 
 .nav-wrapper > .right-side > div {
-    font-family: nimbus;
-    font-style: italic;
-    margin-left: 30px;
-    font-size: 1em;
-    font-weight: 200;
-    text-transform: uppercase;
+  font-family: nimbus;
+  font-style: italic;
+  margin-left: 30px;
+  font-size: 1em;
+  font-weight: 200;
+  text-transform: uppercase;
 }
 
 .nav-wrapper > .left-side-image > div {
-    font-family: nimbus-bold;
-    font-style: italic;
-    letter-spacing: 1.25;
-    margin-right: 30px;
-    font-size: 1.25em;
-    font-weight: bold;
-    text-transform: uppercase;
+  font-family: nimbus-bold;
+  font-style: italic;
+  letter-spacing: 1.25;
+  margin-right: 30px;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-transform: uppercase;
 
-    padding: 4px;
-    background: linear-gradient(to right, black, dodgerblue 20%, mediumspringgreen 40%, gold 60%, orangered 80%, black);
-    background-size: 200% auto;
-    color: #000;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: blueblue 4s linear infinite;
+  padding: 4px;
+  background: linear-gradient(
+    to right,
+    black,
+    dodgerblue 20%,
+    mediumspringgreen 40%,
+    gold 60%,
+    orangered 80%,
+    black
+  );
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: blueblue 4s linear infinite;
 
-	/* color: #f35626;
+  /* color: #f35626;
 	background-image: -webkit-linear-gradient(90deg, #f35626, #feab3a);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -122,10 +130,10 @@ body {
 }
 
 @keyframes blueblue {
-    to {
-      background-position: 200% center;
-    }
+  to {
+    background-position: 200% center;
   }
+}
 
 /* @-webkit-keyframes hue {
 	from {
@@ -137,175 +145,177 @@ body {
 } */
 
 .nav-link-wrapper {
-    height: 20px;
-    padding: 5px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
+  height: 20px;
+  padding: 5px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
 }
 
 .logo {
-    height: 24px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
+  height: 24px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
 }
 
 .nav-link-wrapper a {
-    color: black;
-    text-decoration: none;
-    transition: color 0.5s;
-    
+  color: black;
+  text-decoration: none;
+  transition: color 0.5s;
 }
 
 .logo a {
-    color: black;
-    text-decoration: none;
-    transition: color 0.5s;
-    
+  color: black;
+  text-decoration: none;
+  transition: color 0.5s;
 }
 
 .nav-link-wrapper:hover {
-    border-bottom: 2px solid dodgerblue;
+  border-bottom: 2px solid dodgerblue;
 }
 
 .logo:hover {
-    border-bottom: 2px solid dodgerblue;
+  border-bottom: 2px solid dodgerblue;
 }
 
 .nav-link-wrapper a:hover {
-    color: dodgerblue;
+  color: dodgerblue;
 }
 
 .logo a:hover {
-    color: dodgerblue;
+  color: dodgerblue;
 }
 
 .burger {
-    display: none;
+  display: none;
 }
 
 .burger div {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  margin: 10px;
+  transition: 0.375s ease;
+}
+
+@media screen and (max-width: 910px) {
+  body {
+    position: relative;
+    scroll-behavior: auto;
+    width: 100%;
+  }
+
+  .right-side {
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    position: absolute;
+    right: 0px;
+    height: 0;
+    top: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+    width: 100%;
+    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+    overflow-x: hidden;
+    box-shadow: 0px 10px 60px dodgerblue;
+  }
+
+  .right-side > div {
+    padding: 18px;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .nav-link-wrapper a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.1s;
+    transition: all 0.125s;
+    opacity: 0;
+  }
+
+  .nav-link-wrapper:hover {
+    border-bottom: 2px solid black;
+  }
+
+  .nav-link-wrapper a:hover {
+    color: black;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .logo {
+    padding: 4px 0px;
+    height: 20px;
+  }
+
+  .nav-active {
+    height: 398px;
+  }
+
+  .nav-active .nav-link-wrapper a {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-image-wrapper,
+  .home-image-wrapper-About,
+  .home-image-wrapper-POW,
+  .home-image-wrapper-Blog,
+  .home-image-wrapper-Astro,
+  .home-image-wrapper-SpaceX {
+    zoom: 53.75%;
+    background-position: center;
+  }
+
+  .logo {
+    height: 24px;
+    font-size: 5px;
+    padding: 1px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+  }
+
+  .burger div {
     width: 20px;
     height: 2px;
     background-color: black;
     margin: 10px;
-    transition: 0.375s ease;
-}
+    transition: 0.5s ease;
+  }
 
-@media screen and (max-width: 910px) {    
-    body {
-        position: relative;
-        scroll-behavior: auto;
-        width: 100%;
-    }
-    
-    .right-side {
-        background-color: dodgerblue;
-        border: 1px solid dodgerblue;
-        position: absolute;
-        right: 0px;
-        height: 0;
-        top: 74px;
-        display: flex;
-        flex-direction: column;
-        align-items: right;
-        justify-content: center;
-        width: 100%;
-        transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
-        overflow-x: hidden;
-        box-shadow: 0px 10px 60px dodgerblue;
-    }
+  .nav-wrapper > .right-side > div {
+    font-size: 1em;
+  }
 
-    .right-side > div {
-        padding: 18px;
-        position: relative;
-        overflow-x: hidden;
-    }
+  .right-side > div {
+    padding: 8px;
+    position: relative;
+    overflow-x: hidden;
+  }
 
-    .nav-link-wrapper a {
-        color: white;
-        text-decoration: none;
-        transition: color 0.1s;
-        transition: all .125s;
-        opacity: 0; 
-    }
+  .right-side {
+    top: 74px;
+    height: 0;
+  }
 
-    .nav-link-wrapper:hover {
-        border-bottom: 2px solid black;
-    }
+  .nav-active {
+    height: 213px;
+  }
 
-    .nav-link-wrapper a:hover {
-        color: black;
-    }
-
-    .burger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .logo {
-        padding: 4px 0px;
-        height: 20px;
-    }
-
-    .nav-active {
-        height: 398px;
-    }
-
-    .nav-active .nav-link-wrapper a {
-        opacity: 1; 
-    }
-    
-}
-
-@media screen and (max-width: 600px) {    
-    .home-image-wrapper, .home-image-wrapper-About, .home-image-wrapper-POW, .home-image-wrapper-Blog, .home-image-wrapper-Astro, .home-image-wrapper-SpaceX {
-        zoom: 53.75%;
-        background-position: center;
-    }
-
-    .logo {
-        height: 24px;
-        font-size: 5px;
-        padding: 1px;
-        border-bottom: 1px solid transparent;
-        transition: border-bottom 0.5s;
-    }
-
-    .burger div {
-        width: 20px;
-        height: 2px;
-        background-color: black;
-        margin: 10px;
-        transition: 0.5s ease;
-    }
-
-    .nav-wrapper > .right-side > div {
-        font-size: 1em;
-    }    
-
-    .right-side > div {
-        padding: 8px;
-        position: relative;
-        overflow-x: hidden;
-    }
-
-    .right-side {
-        top: 74px;
-        height: 0;
-    }
-
-    .nav-active {
-        height: 213px;
-    }
-
-    .nav-active .nav-link-wrapper a {
-        opacity: 1; 
-    }
+  .nav-active .nav-link-wrapper a {
+    opacity: 1;
+  }
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-2.5px, 6px);
-    background-color: dodgerblue;
+  transform: rotate(-45deg) translate(-2.5px, 6px);
+  background-color: dodgerblue;
 }
 
 /*.toggle .line2 {
@@ -313,236 +323,244 @@ body {
 } */
 
 .toggle .line2 {
-    transform: rotate(45deg) translate(-2.5px, -6px);
-    background-color: dodgerblue;
+  transform: rotate(45deg) translate(-2.5px, -6px);
+  background-color: dodgerblue;
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35px;
-    margin: 0px;
-    padding: 10px;
-    background-color: dodgerblue;
-    box-shadow: 0px -10px 60px dodgerblue;    
- }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  margin: 0px;
+  padding: 10px;
+  background-color: dodgerblue;
+  box-shadow: 0px -10px 60px dodgerblue;
+}
 
 #footerText {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 0.0125rem;
-    font-weight: 300;
-    font-size: .875rem;
-    color: white;
-    padding: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.0125rem;
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: white;
+  padding: 5px;
 }
 
 .footer-leftside {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-leftside > div a {
-    text-decoration: none;
-    color: white;
-    padding: 6px;
+  text-decoration: none;
+  color: white;
+  padding: 6px;
 }
 
-
 .home-image-wrapper {
-    height: 400px;
-    width: 100%;
-    background-image: url(images/milkyway2.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-position: center;
-    box-shadow: 0px 0px 40px dodgerblue; 
-} 
+  height: 400px;
+  width: 100%;
+  background-image: url(images/milkyway2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position: center;
+  box-shadow: 0px 0px 40px dodgerblue;
+}
 
 .home-image-wrapper-SpaceX {
-    height: 400px;
-    width: 100%;
-    background-image: url(images/nasa6.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-position: center ;  
-    box-shadow: 0px 0px 40px dodgerblue;    
-} 
+  height: 400px;
+  width: 100%;
+  background-image: url(images/nasa6.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position: center;
+  box-shadow: 0px 0px 40px dodgerblue;
+}
 
 .home-image-wrapper-Astro {
-    height: 400px;
-    width: 100%;
-    background-image: url(images/nasa5.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-position: center ;    
-    box-shadow: 0px 0px 40px dodgerblue;     
-} 
+  height: 400px;
+  width: 100%;
+  background-image: url(images/nasa5.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position: center;
+  box-shadow: 0px 0px 40px dodgerblue;
+}
 
 .home-image-wrapper-Blog {
-    height: 400px;
-    width: 100%;
-    background-image: url(images/nasa2.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-position: center ;
-    box-shadow: 0px 0px 40px dodgerblue;            
-} 
+  height: 400px;
+  width: 100%;
+  background-image: url(images/nasa2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position: center;
+  box-shadow: 0px 0px 40px dodgerblue;
+}
 
 .home-image-wrapper-About {
-    height: 400px;
-    width: 100%;
-    background-image: url(images/moon.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-position: center ; 
-    box-shadow: 0px 0px 40px dodgerblue;   
-} 
+  height: 400px;
+  width: 100%;
+  background-image: url(images/moon.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position: center;
+  box-shadow: 0px 0px 40px dodgerblue;
+}
 
 .home-image-wrapper-POW {
-    height: 400px;
-    width: 100%;
-    background-image: url(images/nasa4.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-position: center ;    
-    box-shadow: 0px 0px 40px dodgerblue;        
-} 
+  height: 400px;
+  width: 100%;
+  background-image: url(images/nasa4.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position: center;
+  box-shadow: 0px 0px 40px dodgerblue;
+}
 
 article {
-    display: grid;
-    grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+  padding: 10px;
 }
 
 article * {
-    grid-column: start/end ;
+  grid-column: start/end;
 }
 
 @media (max-width: 8.5in) {
-    article {    
-        grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr;
-    }
+  article {
+    grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr;
+  }
 }
 
 img {
-    width: 100%
+  width: 100%;
 }
 
-.purpose, .aboutMe {
-    margin: 5px;
-    padding: 5px;
-    font-family: nimbus;
-    font-style: italic;
-    text-transform: uppercase;
-    letter-spacing: 0.0125rem;
-    font-weight: 900;
-    font-size: 2rem;
+.purpose,
+.aboutMe {
+  margin: 5px;
+  padding: 5px;
+  font-family: nimbus;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.0125rem;
+  font-weight: 900;
+  font-size: 2rem;
 }
 
-.purpose-para, .aboutMe-para {
-    margin: 5px;
-    padding: 5px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.75;
+.purpose-para,
+.aboutMe-para {
+  margin: 5px;
+  padding: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
-.bois, .r-7 {
-    grid-column: 4/5;
-    padding: 5px;
+.bois,
+.r-7 {
+  grid-column: 4/5;
+  padding: 5px;
 }
 
 .aBriefHistoryOfSpaceExploration {
-    text-align: center;
-    font-family: nimbus;
-    font-style: italic;
-    text-transform: uppercase;
-    letter-spacing: 0.0125rem;
-    font-weight: 900;
-    font-size: 2.25rem;
-    text-decoration: underline dodgerblue;
-
+  text-align: center;
+  font-family: nimbus;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.0125rem;
+  font-weight: 900;
+  font-size: 2.25rem;
+  text-decoration: underline dodgerblue;
 }
 
 .whereItAllBegan {
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-transform: uppercase;
-    font-style: italic;
-    letter-spacing: 0.0125rem;
-    font-weight: 400;
-    font-size: 1.375rem;
-    text-decoration: underline orangered;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.0125rem;
+  font-weight: 400;
+  font-size: 1.375rem;
+  text-decoration: underline orangered;
 }
 
-.theFifties, .theSixties {
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: italic;
-    letter-spacing: 0.0125rem;
-    font-weight: 400;
-    font-size: 1.375rem;
-    text-decoration: underline orangered;
+.theFifties,
+.theSixties {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: italic;
+  letter-spacing: 0.0125rem;
+  font-weight: 400;
+  font-size: 1.375rem;
+  text-decoration: underline orangered;
 }
 
-
-.theColdWar, .sputnikOne {
-    margin: 0px;
-    padding: 2px;
-    font-family: nimbus;
-    font-style: italic;
-    text-transform: uppercase;
-    letter-spacing: 0.0125rem;
-    font-weight: 900;
-    font-size: 1.75rem;
+.theColdWar,
+.sputnikOne {
+  margin: 0px;
+  padding: 2px;
+  font-family: nimbus;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.0125rem;
+  font-weight: 900;
+  font-size: 1.75rem;
 }
 
-.year1, .year2 {
-    margin: 0px;
-    padding: 2px;
-    font-family: nimbus;
-    font-style: italic;
-    text-transform: uppercase;
-    letter-spacing: 0.0125rem;
-    font-weight: 900;
-    font-size: 1rem;
+.year1,
+.year2 {
+  margin: 0px;
+  padding: 2px;
+  font-family: nimbus;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.0125rem;
+  font-weight: 900;
+  font-size: 1rem;
 }
 
-.coldWar-para, .sputnik-para {
-    margin: 0px;
-    padding: 2px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.75;
+.coldWar-para,
+.sputnik-para {
+  margin: 0px;
+  padding: 2px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
-.r-7, .sputnik1 {
-    grid-column: 4/5;
-    padding: 8px;
+.r-7,
+.sputnik1 {
+  grid-column: 4/5;
+  padding: 8px;
 }
 
-.imgCaptions, .imgCaptions a {
-    text-decoration: none;
-    text-align: center;
-    color: black;
-    margin: 0px;
-    padding: 2px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
-    font-size: .875rem;
-    font-style: italic;
-    line-height: 1.75;  
+.imgCaptions,
+.imgCaptions a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  margin: 0px;
+  padding: 2px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-style: italic;
+  line-height: 1.75;
 }
-
-
-
-

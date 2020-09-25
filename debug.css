@@ -1,8 +1,5 @@
-
 .debug-center {
-   display: flex;
-   justify-content: top;
-   align-items: top; 
+  display: flex;
+  justify-content: top;
+  align-items: top;
 }
-
-
