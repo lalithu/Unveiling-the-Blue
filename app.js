@@ -10,4 +10,17 @@ const navSlide = () => {
   });
 };
 
+const dropdownSlide = () => {
+  const dropdownburger = document.querySelector(".dropdownburger");
+  const dropdown = document.querySelector(".dropdown-article");
+  //Toggle Nav
+  dropdownburger.addEventListener("click", () => {
+    dropdown.classList.toggle("dropdownburger-active");
+
+    //Burger Animation
+    dropdownburger.classList.toggle("dropdowntoggle");
+  });
+};
+
 navSlide();
+dropdownSlide();
