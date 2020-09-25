@@ -561,7 +561,8 @@ img {
   line-height: 1.75;
 }
 
-.dropdown-info {
+.dropdown-info,
+.dropdown-info1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -571,7 +572,8 @@ img {
   align-items: center;
 }
 
-.dropdownburger div {
+.dropdownburger div,
+.dropdownburger1 div {
   width: 20px;
   height: 2px;
   background-color: black;
@@ -580,7 +582,8 @@ img {
   cursor: pointer;
 }
 
-.dropdown-article {
+.dropdown-article,
+.dropdown-article1 {
   /*background-color: dodgerblue;
   border: 1px solid dodgerblue;
   height: 0;
@@ -591,9 +594,9 @@ img {
   /*box-shadows: 0px 10px 60px dodgerblue;*/
 
   background-color: dodgerblue;
-  border: 1px solid dodgerblue;
+  border: 2px solid dodgerblue;
   right: 0px;
-  max-height: 100px;
+  max-height: 0px;
   width: 100%;
   color: white;
   transition: max-height 2s cubic-bezier(0.19, 1, 0.22, 1);
@@ -601,7 +604,8 @@ img {
   box-shadow: 0px 10px 60px dodgerblue;
 }
 
-.dropdownburger-active {
+.dropdownburger-active,
+.dropdownburger-active1 {
   max-height: 100%;
   opacity: 1;
 }
@@ -612,6 +616,16 @@ img {
 }
 
 .dropdowntoggle .dropdownline2 {
+  transform: rotate(45deg) translate(-2.5px, -6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle1 .dropdownline11 {
+  transform: rotate(-45deg) translate(-2.5px, 6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle1 .dropdownline21 {
   transform: rotate(45deg) translate(-2.5px, -6px);
   background-color: dodgerblue;
 }

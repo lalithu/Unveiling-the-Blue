@@ -22,9 +22,24 @@ var dropdownSlide = () => {
   });
 };
 
+var dropdownSlide1 = () => {
+  var dropdownburger = document.querySelector(".dropdownburger1");
+  var dropdown = document.querySelector(".dropdown-article1");
+  //Toggle Nav
+  dropdownburger.addEventListener("click", () => {
+    dropdown.classList.toggle("dropdownburger-active1");
+
+    //Burger Animation
+    dropdownburger.classList.toggle("dropdowntoggle1");
+  });
+};
+
 const app = () => {
   navSlide();
   dropdownSlide();
+  dropdownSlide1();
 };
 
 app();
+
+//Each Dropdownm, Just add 1
