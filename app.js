@@ -10,9 +10,9 @@ const navSlide = () => {
   });
 };
 
-const dropdownSlide = () => {
-  const dropdownburger = document.querySelector(".dropdownburger");
-  const dropdown = document.querySelector(".dropdown-article");
+var dropdownSlide = () => {
+  var dropdownburger = document.querySelector(".dropdownburger");
+  var dropdown = document.querySelector(".dropdown-article");
   //Toggle Nav
   dropdownburger.addEventListener("click", () => {
     dropdown.classList.toggle("dropdownburger-active");
@@ -22,5 +22,9 @@ const dropdownSlide = () => {
   });
 };
 
-navSlide();
-dropdownSlide();
+const app = () => {
+  navSlide();
+  dropdownSlide();
+};
+
+app();
