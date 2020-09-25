@@ -355,7 +355,7 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     background-position: center;
-    box-shadow: 0px 0px 400px dodgerblue; 
+    box-shadow: 0px 0px 40px dodgerblue; 
 } 
 
 .home-image-wrapper-SpaceX {
@@ -366,7 +366,7 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     background-position: center ;  
-    box-shadow: 0px 0px 400px dodgerblue;    
+    box-shadow: 0px 0px 40px dodgerblue;    
 } 
 
 .home-image-wrapper-Astro {
@@ -377,7 +377,7 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     background-position: center ;    
-    box-shadow: 0px 0px 400px dodgerblue;     
+    box-shadow: 0px 0px 40px dodgerblue;     
 } 
 
 .home-image-wrapper-Blog {
@@ -388,7 +388,7 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     background-position: center ;
-    box-shadow: 0px 0px 400px dodgerblue;            
+    box-shadow: 0px 0px 40px dodgerblue;            
 } 
 
 .home-image-wrapper-About {
@@ -399,7 +399,7 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     background-position: center ; 
-    box-shadow: 0px 0px 400px dodgerblue;   
+    box-shadow: 0px 0px 40px dodgerblue;   
 } 
 
 .home-image-wrapper-POW {
@@ -410,7 +410,7 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     background-position: center ;    
-    box-shadow: 0px 0px 400px dodgerblue;        
+    box-shadow: 0px 0px 40px dodgerblue;        
 } 
 
 article {
