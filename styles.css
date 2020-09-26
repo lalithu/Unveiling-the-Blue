@@ -567,7 +567,7 @@ img {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 50px;
+  height: 25px;
   margin: auto;
   align-items: center;
 }
@@ -594,9 +594,8 @@ img {
   /*box-shadows: 0px 10px 60px dodgerblue;*/
 
   background-color: dodgerblue;
-  border: 2px solid dodgerblue;
   right: 0px;
-  max-height: 0px;
+  max-height: 2px;
   width: 100%;
   color: white;
   transition: max-height 2s cubic-bezier(0.19, 1, 0.22, 1);
