@@ -598,7 +598,7 @@ img {
   max-height: 2px;
   width: 100%;
   color: white;
-  transition: max-height 3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: max-height 2s cubic-bezier(0.19, 1, 0.22, 1);
   overflow-x: hidden;
   box-shadow: 0px 10px 60px dodgerblue;
 }
