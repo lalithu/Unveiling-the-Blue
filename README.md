@@ -1,1 +1,3 @@
-# © Unveiling the Blue by Lalith Uriti 2020
+# Unveiling the Blue
+
+© Lalith Uriti, 2020 | https://lalithu.github.io/UnveilingtheBlue/index.html
