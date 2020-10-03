@@ -210,14 +210,14 @@ body {
     border: 1px solid dodgerblue;
     position: absolute;
     right: 0px;
-    height: 0;
+    height: 100px;
     top: 74px;
     display: flex;
     flex-direction: column;
     align-items: right;
     justify-content: center;
     width: 100%;
-    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1s ease;
     overflow-x: hidden;
     box-shadow: 0px 10px 60px dodgerblue;
   }
@@ -226,6 +226,7 @@ body {
     padding: 18px;
     position: relative;
     overflow-x: hidden;
+    height: 18px;
   }
 
   .nav-link-wrapper a {
@@ -599,7 +600,7 @@ img {
   height: 2px;
   width: 100%;
   color: white;
-  transition: all 2s;
+  transition: all 2s ease;
   overflow-x: hidden;
   box-shadow: 0px 10px 60px dodgerblue;
 }
