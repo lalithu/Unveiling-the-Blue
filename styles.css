@@ -563,6 +563,19 @@ img {
   line-height: 1.75;
 }
 
+@media screen and (max-width: 570px) {
+  .aBriefHistoryOfSpaceExploration {
+    font-size: 2rem;
+  }
+
+  .whereItAllBegan,
+  .theFifties,
+  .theSixties {
+    font-size: 1.25rem;
+    text-decoration: underline orangered;
+  }
+}
+
 .dropdown-info,
 .dropdown-info1 {
   display: flex;
