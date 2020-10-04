@@ -681,13 +681,22 @@ neptune = 1,440,000 hours /877 = 1641.96123s
 pluto = 2,170,000 hours /877 = 2474.34436s
 */
 
+.solarsys-orbit {
+  width: 400px;
+  height: 400px;
+  background-color: transparent;
+  box-shadow: inset 0px 0px 12px gainsboro;
+  border-radius: 100%;
+}
+
 .sun {
-  background: gold;
+  background: linear-gradient(to right, gold, yellow);
   box-shadow: 0px 0px 60px gold;
   --size: 40px;
   --push: -0px;
   border-radius: 50%;
   position: absolute;
+  animation: sunlight 2s linear infinite;
 }
 
 .mercury {
@@ -701,8 +710,8 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .venus {
-  background: darkgray;
-  box-shadow: 0px 0px 60px darkgray;
+  background: darkorange;
+  box-shadow: 0px 0px 60px darkorange;
   --size: 8px;
   --push: -55px;
   border-radius: 100%;
@@ -723,18 +732,18 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 .moon {
   top: 40%;
   left: 40%;
-  background: black;
-  box-shadow: 0px 0px 60px dodgerblue;
-  --size: 2px;
-  --push: -5px;
+  background: silver;
+  box-shadow: 0px 0px 60px silver;
+  --size: 3px;
+  --push: -7px;
   border-radius: 100%;
   position: absolute;
   animation: orbit 0.738882554s infinite linear;
 }
 
 .mars {
-  background: orangered;
-  box-shadow: 0px 0px 60px orangered;
+  background: crimson;
+  box-shadow: 0px 0px 60px crimson;
   --size: 6px;
   --push: -95px;
   border-radius: 100%;
@@ -754,7 +763,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 .asteroidbelt {
   background: black;
   box-shadow: 0px 0px 60px black;
-  --size: 2px;
+  --size: 3px;
   --push: -105px;
   border-radius: 100%;
   position: absolute;
@@ -764,7 +773,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 .asteroidbelt1 {
   background: black;
   box-shadow: 0px 0px 60px black;
-  --size: 2px;
+  --size: 3px;
   --push: 105px;
   border-radius: 100%;
   position: absolute;
@@ -774,7 +783,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 .asteroidbelt2 {
   background: black;
   box-shadow: 0px 0px 60px black;
-  --size: 2px;
+  --size: 3px;
   --push: -105px;
   border-radius: 100%;
   position: absolute;
@@ -784,7 +793,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 .asteroidbelt3 {
   background: black;
   box-shadow: 0px 0px 60px black;
-  --size: 2px;
+  --size: 3px;
   --push: 105px;
   border-radius: 100%;
   position: absolute;
@@ -794,7 +803,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 .asteroidbelt4 {
   background: black;
   box-shadow: 0px 0px 60px black;
-  --size: 2px;
+  --size: 3px;
   --push: -105px;
   border-radius: 100%;
   position: absolute;
@@ -804,7 +813,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 .asteroidbelt5 {
   background: black;
   box-shadow: 0px 0px 60px black;
-  --size: 2px;
+  --size: 3px;
   --push: 105px;
   border-radius: 100%;
   position: absolute;
@@ -814,7 +823,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 .asteroidbelt6 {
   background: black;
   box-shadow: 0px 0px 60px black;
-  --size: 2px;
+  --size: 3px;
   --push: -105px;
   border-radius: 100%;
   position: absolute;
@@ -824,7 +833,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 .asteroidbelt7 {
   background: black;
   box-shadow: 0px 0px 60px black;
-  --size: 2px;
+  --size: 3px;
   --push: 105px;
   border-radius: 100%;
   position: absolute;
@@ -832,8 +841,8 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .jupiter {
-  background: gold;
-  box-shadow: 0px 0px 60px gold;
+  background: linear-gradient(coral, gainsboro, coral, gainsboro, coral);
+  box-shadow: 0px 0px 60px coral;
   --size: 20px;
   --push: -125px;
   border-radius: 100%;
@@ -842,8 +851,8 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .saturn {
-  background: orange;
-  box-shadow: 0px 0px 60px orange;
+  background: burlywood;
+  box-shadow: 0px 0px 60px burlywood;
   --size: 12px;
   --push: -145px;
   border-radius: 100%;
@@ -851,30 +860,56 @@ pluto = 2,170,000 hours /877 = 2474.34436s
   animation: orbit 296.465222s infinite linear;
 }
 
+.saturn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180%;
+  height: 6px;
+  border: 2px solid saddlebrown;
+  border-top: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(30deg);
+}
+
 .uranus {
   background: lightskyblue;
   box-shadow: 0px 0px 60px lightskyblue;
   --size: 10px;
-  --push: -160px;
+  --push: -165px;
   border-radius: 100%;
   position: absolute;
   animation: orbit 843.785633s infinite linear;
+}
+
+.uranus::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180%;
+  height: 4px;
+  border: 1px solid black;
+  border-top: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .neptune {
   background: blue;
   box-shadow: 0px 0px 60px blue;
   --size: 10px;
-  --push: -175px;
+  --push: -182.5px;
   border-radius: 100%;
   position: absolute;
   animation: orbit 1641.96123s infinite linear;
 }
 
 .pluto {
-  background: gray;
-  box-shadow: 0px 0px 60px gray;
-  --size: 3px;
+  background: chocolate;
+  box-shadow: 0px 0px 60px chocolate;
+  --size: 4px;
   --push: -195px;
   border-radius: 100%;
   position: absolute;
@@ -908,6 +943,101 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 
   to {
     transform: rotate(360deg) translateX(var(--push));
+  }
+}
+
+@keyframes sunlight {
+  from {
+    transform: rotate(180);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .solarsys-orbit {
+    width: 350px;
+    height: 350px;
+  }
+
+  .sun {
+    --size: 35px;
+    --push: -0px;
+  }
+
+  .mercury {
+    --push: -30px;
+  }
+
+  .venus {
+    --push: -42.5px;
+  }
+
+  .earth {
+    --push: -55px;
+  }
+
+  .mars {
+    --push: -67.5px;
+  }
+
+  .asteroidbelt-orbit {
+    width: 160px;
+    height: 160px;
+  }
+
+  .asteroidbelt {
+    --push: -80px;
+  }
+
+  .asteroidbelt1 {
+    --push: 80px;
+  }
+
+  .asteroidbelt2 {
+    --push: -80px;
+  }
+
+  .asteroidbelt3 {
+    --push: 80px;
+  }
+
+  .asteroidbelt4 {
+    --push: -80px;
+  }
+
+  .asteroidbelt5 {
+    --push: 80px;
+  }
+
+  .asteroidbelt6 {
+    --push: -80px;
+  }
+
+  .asteroidbelt7 {
+    --push: 80px;
+  }
+
+  .jupiter {
+    --push: -95px;
+  }
+
+  .saturn {
+    --push: -117.5px;
+  }
+
+  .uranus {
+    --push: -142.5px;
+  }
+
+  .neptune {
+    --push: -160px;
+  }
+
+  .pluto {
+    --push: -170px;
   }
 }
 
