@@ -662,7 +662,8 @@ img {
 .asteroidbelt4,
 .asteroidbelt5,
 .asteroidbelt6,
-.asteroidbelt7 {
+.asteroidbelt7,
+.moon {
   width: var(--size);
   height: var(--size);
 }
@@ -717,6 +718,18 @@ pluto = 2,170,000 hours /877 = 2474.34436s
   border-radius: 100%;
   position: absolute;
   animation: orbit 10s infinite linear;
+}
+
+.moon {
+  top: 40%;
+  left: 40%;
+  background: black;
+  box-shadow: 0px 0px 60px dodgerblue;
+  --size: 2px;
+  --push: -5px;
+  border-radius: 100%;
+  position: absolute;
+  animation: orbit 0.738882554s infinite linear;
 }
 
 .mars {
