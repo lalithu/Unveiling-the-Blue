@@ -475,7 +475,8 @@ img {
   padding: 5px;
 }
 
-.aBriefHistoryOfSpaceExploration {
+.aBriefHistoryOfSpaceExploration,
+.ourSolarSystem {
   text-align: center;
   font-family: nimbus;
   font-style: italic;
@@ -641,4 +642,257 @@ img {
 .dropdowntoggle1 .dropdownline21 {
   transform: rotate(45deg) translate(-2.5px, -6px);
   background-color: dodgerblue;
+}
+
+.solarsys {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.star,
+.planet,
+.asteroidbelt,
+.asteroidbelt1,
+.asteroidbelt2,
+.asteroidbelt3,
+.asteroidbelt4,
+.asteroidbelt5,
+.asteroidbelt6,
+.asteroidbelt7 {
+  width: var(--size);
+  height: var(--size);
+}
+
+/* 
+mercury orbit = 2,100 hours /877 = 2.3945268s
+venus orrbit = 5,390 hours /877 = 6.14595211s
+earth orbit = 8,770 hours /877 = 10s
+mars orbit = 16,500 hours /877 = 18.8141391s
+jupiter = 100,000 hours /877 = 114.025086s
+saturn = 260,000 hours /877 = 296.465222s
+uranus = 740,000 hours /877 = 843.785633s
+neptune = 1,440,000 hours /877 = 1641.96123s
+pluto = 2,170,000 hours /877 = 2474.34436s
+*/
+
+.sun {
+  background: gold;
+  box-shadow: 0px 0px 60px gold;
+  --size: 40px;
+  --push: -0px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.mercury {
+  background: gray;
+  box-shadow: 0px 0px 60px gray;
+  --size: 4px;
+  --push: -35px;
+  border-radius: 100%;
+  position: absolute;
+  animation: orbit 2.3945268s infinite linear;
+}
+
+.venus {
+  background: darkgray;
+  box-shadow: 0px 0px 60px darkgray;
+  --size: 8px;
+  --push: -55px;
+  border-radius: 100%;
+  position: absolute;
+  animation: orbit 6.14595211s infinite linear;
+}
+
+.earth {
+  background: dodgerblue;
+  box-shadow: 0px 0px 60px dodgerblue;
+  --size: 6px;
+  --push: -75px;
+  border-radius: 100%;
+  position: absolute;
+  animation: orbit 10s infinite linear;
+}
+
+.mars {
+  background: orangered;
+  box-shadow: 0px 0px 60px orangered;
+  --size: 6px;
+  --push: -95px;
+  border-radius: 100%;
+  position: absolute;
+  animation: orbit 18.8141391s infinite linear;
+}
+
+.asteroidbelt-orbit {
+  width: 210px;
+  height: 210px;
+  background-color: transparent;
+  box-shadow: inset 0px 0px 12px gainsboro;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.asteroidbelt {
+  background: black;
+  box-shadow: 0px 0px 60px black;
+  --size: 2px;
+  --push: -105px;
+  border-radius: 100%;
+  position: absolute;
+  animation: asteroidbeltx 9s infinite linear;
+}
+
+.asteroidbelt1 {
+  background: black;
+  box-shadow: 0px 0px 60px black;
+  --size: 2px;
+  --push: 105px;
+  border-radius: 100%;
+  position: absolute;
+  animation: asteroidbeltx 9s infinite linear;
+}
+
+.asteroidbelt2 {
+  background: black;
+  box-shadow: 0px 0px 60px black;
+  --size: 2px;
+  --push: -105px;
+  border-radius: 100%;
+  position: absolute;
+  animation: asteroidbelty 9s infinite linear;
+}
+
+.asteroidbelt3 {
+  background: black;
+  box-shadow: 0px 0px 60px black;
+  --size: 2px;
+  --push: 105px;
+  border-radius: 100%;
+  position: absolute;
+  animation: asteroidbelty 9s infinite linear;
+}
+
+.asteroidbelt4 {
+  background: black;
+  box-shadow: 0px 0px 60px black;
+  --size: 2px;
+  --push: -105px;
+  border-radius: 100%;
+  position: absolute;
+  animation: asteroidbelty 8s infinite linear;
+}
+
+.asteroidbelt5 {
+  background: black;
+  box-shadow: 0px 0px 60px black;
+  --size: 2px;
+  --push: 105px;
+  border-radius: 100%;
+  position: absolute;
+  animation: asteroidbelty 8s infinite linear;
+}
+
+.asteroidbelt6 {
+  background: black;
+  box-shadow: 0px 0px 60px black;
+  --size: 2px;
+  --push: -105px;
+  border-radius: 100%;
+  position: absolute;
+  animation: asteroidbeltx 8s infinite linear;
+}
+
+.asteroidbelt7 {
+  background: black;
+  box-shadow: 0px 0px 60px black;
+  --size: 2px;
+  --push: 105px;
+  border-radius: 100%;
+  position: absolute;
+  animation: asteroidbeltx 8s infinite linear;
+}
+
+.jupiter {
+  background: gold;
+  box-shadow: 0px 0px 60px gold;
+  --size: 20px;
+  --push: -125px;
+  border-radius: 100%;
+  position: absolute;
+  animation: orbit 114.025086s infinite linear;
+}
+
+.saturn {
+  background: orange;
+  box-shadow: 0px 0px 60px orange;
+  --size: 12px;
+  --push: -145px;
+  border-radius: 100%;
+  position: absolute;
+  animation: orbit 296.465222s infinite linear;
+}
+
+.uranus {
+  background: lightskyblue;
+  box-shadow: 0px 0px 60px lightskyblue;
+  --size: 10px;
+  --push: -160px;
+  border-radius: 100%;
+  position: absolute;
+  animation: orbit 843.785633s infinite linear;
+}
+
+.neptune {
+  background: blue;
+  box-shadow: 0px 0px 60px blue;
+  --size: 10px;
+  --push: -175px;
+  border-radius: 100%;
+  position: absolute;
+  animation: orbit 1641.96123s infinite linear;
+}
+
+.pluto {
+  background: gray;
+  box-shadow: 0px 0px 60px gray;
+  --size: 3px;
+  --push: -195px;
+  border-radius: 100%;
+  position: absolute;
+  animation: orbit 10s infinite linear;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0) translateY(var(--push));
+  }
+
+  to {
+    transform: rotate(360deg) translateY(var(--push));
+  }
+}
+
+@keyframes asteroidbeltx {
+  from {
+    transform: rotate(0) translateY(var(--push));
+  }
+
+  to {
+    transform: rotate(360deg) translateY(var(--push));
+  }
+}
+
+@keyframes asteroidbelty {
+  from {
+    transform: rotate(0) translateX(var(--push));
+  }
+
+  to {
+    transform: rotate(360deg) translateX(var(--push));
+  }
 }
