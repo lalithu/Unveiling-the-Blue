@@ -700,7 +700,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .mercury {
-  background: gray;
+  background: linear-gradient(gray, darkgray);
   box-shadow: 0px 0px 60px gray;
   --size: 4px;
   --push: -35px;
@@ -710,7 +710,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .venus {
-  background: darkorange;
+  background: linear-gradient(darkorange, gainsboro);
   box-shadow: 0px 0px 60px darkorange;
   --size: 8px;
   --push: -55px;
@@ -720,7 +720,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .earth {
-  background: dodgerblue;
+  background: linear-gradient(dodgerblue, green);
   box-shadow: 0px 0px 60px dodgerblue;
   --size: 6px;
   --push: -75px;
@@ -742,7 +742,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .mars {
-  background: crimson;
+  background: linear-gradient(crimson, darkred);
   box-shadow: 0px 0px 60px crimson;
   --size: 6px;
   --push: -95px;
@@ -761,8 +761,8 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .asteroidbelt {
-  background: white;
-  box-shadow: 0px 0px 60px white;
+  background: black;
+  box-shadow: 0px 0px 60px black;
   --size: 3px;
   --push: -105px;
   border-radius: 100%;
@@ -771,8 +771,8 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .asteroidbelt1 {
-  background: white;
-  box-shadow: 0px 0px 60px white;
+  background: black;
+  box-shadow: 0px 0px 60px black;
   --size: 3px;
   --push: 105px;
   border-radius: 100%;
@@ -781,8 +781,8 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .asteroidbelt2 {
-  background: white;
-  box-shadow: 0px 0px 60px white;
+  background: black;
+  box-shadow: 0px 0px 60px black;
   --size: 3px;
   --push: -105px;
   border-radius: 100%;
@@ -791,8 +791,8 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .asteroidbelt3 {
-  background: white;
-  box-shadow: 0px 0px 60px white;
+  background: black;
+  box-shadow: 0px 0px 60px black;
   --size: 3px;
   --push: 105px;
   border-radius: 100%;
@@ -801,8 +801,8 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .asteroidbelt4 {
-  background: white;
-  box-shadow: 0px 0px 60px white;
+  background: black;
+  box-shadow: 0px 0px 60px black;
   --size: 3px;
   --push: -105px;
   border-radius: 100%;
@@ -811,8 +811,8 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .asteroidbelt5 {
-  background: white;
-  box-shadow: 0px 0px 60px white;
+  background: black;
+  box-shadow: 0px 0px 60px black;
   --size: 3px;
   --push: 105px;
   border-radius: 100%;
@@ -821,8 +821,8 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .asteroidbelt6 {
-  background: white;
-  box-shadow: 0px 0px 60px white;
+  background: black;
+  box-shadow: 0px 0px 60px black;
   --size: 3px;
   --push: -105px;
   border-radius: 100%;
@@ -831,8 +831,8 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .asteroidbelt7 {
-  background: white;
-  box-shadow: 0px 0px 60px white;
+  background: black;
+  box-shadow: 0px 0px 60px black;
   --size: 3px;
   --push: 105px;
   border-radius: 100%;
@@ -841,7 +841,14 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .jupiter {
-  background: linear-gradient(coral, gainsboro, coral, gainsboro, coral);
+  background: linear-gradient(
+    #b2927b,
+    coral,
+    #b2927b,
+    gainsboro,
+    #b2927b,
+    #b2927b
+  );
   box-shadow: 0px 0px 60px coral;
   --size: 20px;
   --push: -125px;
@@ -851,7 +858,13 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .saturn {
-  background: burlywood;
+  background: linear-gradient(
+    #b2927b,
+    #b2927b,
+    saddlebrown,
+    gainsboro,
+    burlywood
+  );
   box-shadow: 0px 0px 60px burlywood;
   --size: 12px;
   --push: -145px;
@@ -874,7 +887,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .uranus {
-  background: lightskyblue;
+  background: linear-gradient(dodgerblue, blue, mediumspringgreen, blue);
   box-shadow: 0px 0px 60px lightskyblue;
   --size: 10px;
   --push: -165px;
@@ -897,7 +910,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .neptune {
-  background: blue;
+  background: linear-gradient(blue, blue, gainsboro, blue);
   box-shadow: 0px 0px 60px blue;
   --size: 10px;
   --push: -182.5px;
@@ -907,7 +920,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 }
 
 .pluto {
-  background: chocolate;
+  background: linear-gradient(gainsboro, darkred);
   box-shadow: 0px 0px 60px chocolate;
   --size: 4px;
   --push: -195px;
