@@ -693,7 +693,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 .asteroidbelt-orbit {
   width: 210px;
   height: 210px;
-  box-shadow: inset 0px 0px 24px gainsboro;
+  box-shadow: inset 0px 0px 12px gainsboro;
   border-radius: 100%;
   background-size: 150%;
   position: absolute;
