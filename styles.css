@@ -663,7 +663,8 @@ img {
 .asteroidbelt5,
 .asteroidbelt6,
 .asteroidbelt7,
-.moon {
+.moon,
+.moon2 {
   width: var(--size);
   height: var(--size);
 }
@@ -689,14 +690,70 @@ pluto = 2,170,000 hours /877 = 2474.34436s
   background-size: 150%;
 }
 
+.asteroidbelt-orbit {
+  width: 210px;
+  height: 210px;
+  box-shadow: inset 0px 0px 24px gainsboro;
+  border-radius: 100%;
+  background-size: 150%;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+/*.gridline1 {
+  width: 210px;
+  height: 210px;
+  box-shadow: inset 0px 0px 24px gainsboro;
+  border-radius: 100%;
+  background-size: 150%;
+  position: absolute;
+  transition: all 0.5s;
+  animation: orbitalX 4s infinite linear;
+}
+
+.gridline2 {
+  width: 400px;
+  height: 400px;
+  box-shadow: inset 0px 0px 24px gainsboro;
+  border-radius: 100%;
+  background-size: 150%;
+  position: absolute;
+  transition: all 0.5s;
+  animation: orbitalY 4s infinite linear;
+}
+
+@keyframes orbitalX {
+  from {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+    transform: rotate3d(-1, -1, -1, 360deg);
+  }
+}
+
+@keyframes orbitalY {
+  from {
+    transform: rotate3d(-1, 0, 1, 0deg);
+  }
+  to {
+    transform: rotate3d(1, 0, -1, -360deg);
+  }
+} */
+
 .sun {
   background: linear-gradient(to right, gold, yellow);
-  box-shadow: 0px 0px 60px gold;
+  box-shadow: 0px 0px 40px yellow;
   --size: 40px;
-  --push: -0px;
-  border-radius: 50%;
+  --push: 0px;
+  border-radius: 100%;
   position: absolute;
   animation: sunlight 4s linear infinite;
+  transition: all 0.25s;
+}
+
+.sun:hover {
+  --size: 55px;
+  z-index: 1;
 }
 
 .mercury {
@@ -707,6 +764,12 @@ pluto = 2,170,000 hours /877 = 2474.34436s
   border-radius: 100%;
   position: absolute;
   animation: orbit 2.3945268s infinite linear;
+  transition: all 0.25s;
+}
+
+.mercury:hover {
+  --size: 30px;
+  z-index: 1;
 }
 
 .venus {
@@ -717,6 +780,12 @@ pluto = 2,170,000 hours /877 = 2474.34436s
   border-radius: 100%;
   position: absolute;
   animation: orbit 6.14595211s infinite linear;
+  transition: all 0.25s;
+}
+
+.venus:hover {
+  --size: 30px;
+  z-index: 1;
 }
 
 .earth {
@@ -727,6 +796,12 @@ pluto = 2,170,000 hours /877 = 2474.34436s
   border-radius: 100%;
   position: absolute;
   animation: orbit 10s infinite linear;
+  transition: all 0.25s;
+}
+
+.earth:hover {
+  --size: 30px;
+  z-index: 1;
 }
 
 .moon {
@@ -735,10 +810,35 @@ pluto = 2,170,000 hours /877 = 2474.34436s
   background: silver;
   box-shadow: 0px 0px 60px silver;
   --size: 3px;
-  --push: -7px;
+  --push: -8px;
   border-radius: 100%;
   position: absolute;
   animation: orbit 0.738882554s infinite linear;
+  transition: all 0.0001s;
+  visibility: initial;
+}
+
+.earth:hover .moon {
+  visibility: hidden;
+}
+
+.moon2 {
+  top: 40%;
+  left: 40%;
+  background: silver;
+  box-shadow: 0px 0px 60px silver;
+  --size: 8px;
+  --push: -30px;
+  border-radius: 100%;
+  position: absolute;
+  animation: orbit 0.738882554s infinite linear;
+  visibility: hidden;
+  transition: all 0.0001s;
+}
+
+.earth:hover .moon2 {
+  visibility: initial;
+  z-index: 1;
 }
 
 .mars {
@@ -749,15 +849,12 @@ pluto = 2,170,000 hours /877 = 2474.34436s
   border-radius: 100%;
   position: absolute;
   animation: orbit 18.8141391s infinite linear;
+  transition: all 0.25s;
 }
 
-.asteroidbelt-orbit {
-  width: 210px;
-  height: 210px;
-  background-color: transparent;
-  box-shadow: inset 0px 0px 12px gainsboro;
-  border-radius: 100%;
-  position: absolute;
+.mars:hover {
+  --size: 30px;
+  z-index: 1;
 }
 
 .asteroidbelt {
@@ -855,6 +952,12 @@ pluto = 2,170,000 hours /877 = 2474.34436s
   border-radius: 100%;
   position: absolute;
   animation: orbit 114.025086s infinite linear;
+  transition: all 0.25s;
+}
+
+.jupiter:hover {
+  --size: 30px;
+  z-index: 1;
 }
 
 .saturn {
@@ -865,12 +968,18 @@ pluto = 2,170,000 hours /877 = 2474.34436s
     gainsboro,
     burlywood
   );
-  box-shadow: 0px 0px 60px burlywood;
+  box-shadow: 0px 0px 60px saddlebrown;
   --size: 12px;
   --push: -145px;
   border-radius: 100%;
   position: absolute;
   animation: orbit 296.465222s infinite linear;
+  transition: all 0.25s;
+}
+
+.saturn:hover {
+  --size: 30px;
+  z-index: 1;
 }
 
 .saturn::after {
@@ -894,6 +1003,12 @@ pluto = 2,170,000 hours /877 = 2474.34436s
   border-radius: 100%;
   position: absolute;
   animation: orbit 843.785633s infinite linear;
+  transition: all 0.25s;
+}
+
+.uranus:hover {
+  --size: 30px;
+  z-index: 1;
 }
 
 .uranus::after {
@@ -917,6 +1032,12 @@ pluto = 2,170,000 hours /877 = 2474.34436s
   border-radius: 100%;
   position: absolute;
   animation: orbit 1641.96123s infinite linear;
+  transition: all 0.25s;
+}
+
+.neptune:hover {
+  --size: 30px;
+  z-index: 1;
 }
 
 .pluto {
@@ -927,6 +1048,12 @@ pluto = 2,170,000 hours /877 = 2474.34436s
   border-radius: 100%;
   position: absolute;
   animation: orbit 2474.34436s infinite linear;
+  transition: all 0.25s;
+}
+
+.pluto:hover {
+  --size: 30px;
+  z-index: 1;
 }
 
 @keyframes orbit {
