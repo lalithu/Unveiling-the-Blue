@@ -696,7 +696,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
   --push: -0px;
   border-radius: 50%;
   position: absolute;
-  animation: sunlight 2s linear infinite;
+  animation: sunlight 4s linear infinite;
 }
 
 .mercury {
@@ -961,7 +961,7 @@ pluto = 2,170,000 hours /877 = 2474.34436s
 
 @keyframes sunlight {
   from {
-    transform: rotate(180);
+    transform: rotate(0deg);
   }
 
   to {
