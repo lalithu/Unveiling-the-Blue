@@ -475,6 +475,10 @@ img {
 }
 
 @media screen and (max-width: 600px) {
+  .nav-wrapper > .left-side-image > div {
+    letter-spacing: 0.25;
+  }
+
   .purpose,
   .aboutMe {
     margin: 5px;
