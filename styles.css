@@ -543,7 +543,10 @@ img {
 }
 
 .theFifties,
-.theSixties {
+.theSixties,
+.theSeventies,
+.theEighties,
+.the2000s {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -657,7 +660,13 @@ img {
 }
 
 .dropdown-info,
-.dropdown-info1 {
+.dropdown-info1,
+.dropdown-info2,
+.dropdown-info3,
+.dropdown-info4,
+.dropdown-info5,
+.dropdown-info6,
+.dropdown-info7 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -668,7 +677,13 @@ img {
 }
 
 .dropdownburger div,
-.dropdownburger1 div {
+.dropdownburger1 div,
+.dropdownburger2 div,
+.dropdownburger3 div,
+.dropdownburger4 div,
+.dropdownburger5 div,
+.dropdownburger6 div,
+.dropdownburger7 div {
   width: 20px;
   height: 2px;
   background-color: black;
@@ -678,7 +693,13 @@ img {
 }
 
 .dropdown-article,
-.dropdown-article1 {
+.dropdown-article1,
+.dropdown-article2,
+.dropdown-article3,
+.dropdown-article4,
+.dropdown-article5,
+.dropdown-article6,
+.dropdown-article7 {
   /*background-color: dodgerblue;
   border: 1px solid dodgerblue;
   height: 0;
@@ -699,7 +720,13 @@ img {
 }
 
 .dropdownburger-active,
-.dropdownburger-active1 {
+.dropdownburger-active1,
+.dropdownburger-active2,
+.dropdownburger-active3,
+.dropdownburger-active4,
+.dropdownburger-active5,
+.dropdownburger-active6,
+.dropdownburger-active7 {
   height: 800px;
 }
 
@@ -719,6 +746,66 @@ img {
 }
 
 .dropdowntoggle1 .dropdownline21 {
+  transform: rotate(45deg) translate(-2.5px, -6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle2 .dropdownline12 {
+  transform: rotate(-45deg) translate(-2.5px, 6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle2 .dropdownline22 {
+  transform: rotate(45deg) translate(-2.5px, -6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle3 .dropdownline13 {
+  transform: rotate(-45deg) translate(-2.5px, 6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle3 .dropdownline23 {
+  transform: rotate(45deg) translate(-2.5px, -6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle4 .dropdownline14 {
+  transform: rotate(-45deg) translate(-2.5px, 6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle4 .dropdownline24 {
+  transform: rotate(45deg) translate(-2.5px, -6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle5 .dropdownline15 {
+  transform: rotate(-45deg) translate(-2.5px, 6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle5 .dropdownline25 {
+  transform: rotate(45deg) translate(-2.5px, -6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle6 .dropdownline16 {
+  transform: rotate(-45deg) translate(-2.5px, 6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle6 .dropdownline26 {
+  transform: rotate(45deg) translate(-2.5px, -6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle7 .dropdownline17 {
+  transform: rotate(-45deg) translate(-2.5px, 6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle7 .dropdownline27 {
   transform: rotate(45deg) translate(-2.5px, -6px);
   background-color: dodgerblue;
 }
