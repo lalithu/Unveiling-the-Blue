@@ -1504,3 +1504,67 @@ pluto = 2,170,000 hours /877 = 2474.34436s
     font-size: 1.375rem;
   }
 }
+
+.contact-form {
+  padding: 0px;
+}
+
+.contact-title {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-heading {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: italic;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.buttondiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button[type="submit"] {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.0125rem;
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: white;
+  text-emphasis: center;
+  background-color: dodgerblue;
+  box-shadow: 0px 0px 60px dodgerblue;
+  padding: 10px 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+button[type="submit"]:hover {
+  padding: 10px 50px;
+}
