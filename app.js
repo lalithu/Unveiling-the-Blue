@@ -106,6 +106,45 @@ var dropdownSlide7 = () => {
   });
 }; 
 
+
+var dropdownSlide8 = () => {
+  var dropdownburger = document.querySelector(".dropdownburger8");
+  var dropdown = document.querySelector(".dropdown-article8");
+  //Toggle Nav
+  dropdownburger.addEventListener("click", () => {
+    dropdown.classList.toggle("dropdownburger-active8");
+
+    //Burger Animation
+    dropdownburger.classList.toggle("dropdowntoggle8");
+  });
+}; 
+
+
+var dropdownSlide9 = () => {
+  var dropdownburger = document.querySelector(".dropdownburger9");
+  var dropdown = document.querySelector(".dropdown-article9");
+  //Toggle Nav
+  dropdownburger.addEventListener("click", () => {
+    dropdown.classList.toggle("dropdownburger-active9");
+
+    //Burger Animation
+    dropdownburger.classList.toggle("dropdowntoggle9");
+  });
+}; 
+
+
+var dropdownSlide10 = () => {
+  var dropdownburger = document.querySelector(".dropdownburger10");
+  var dropdown = document.querySelector(".dropdown-article10");
+  //Toggle Nav
+  dropdownburger.addEventListener("click", () => {
+    dropdown.classList.toggle("dropdownburger-active10");
+
+    //Burger Animation
+    dropdownburger.classList.toggle("dropdowntoggle10");
+  });
+}; 
+
 const app = () => {
   navSlide();
   dropdownSlide();
@@ -116,6 +155,9 @@ const app = () => {
   dropdownSlide5();
   dropdownSlide6();
   dropdownSlide7();
+  dropdownSlide8();
+  dropdownSlide9();
+  dropdownSlide10();
 };
 
 app();

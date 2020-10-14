@@ -666,7 +666,10 @@ img {
 .dropdown-info4,
 .dropdown-info5,
 .dropdown-info6,
-.dropdown-info7 {
+.dropdown-info7,
+.dropdown-info8,
+.dropdown-info9,
+.dropdown-info10 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -683,7 +686,10 @@ img {
 .dropdownburger4 div,
 .dropdownburger5 div,
 .dropdownburger6 div,
-.dropdownburger7 div {
+.dropdownburger7 div,
+.dropdownburger8 div,
+.dropdownburger9 div,
+.dropdownburger10 div {
   width: 20px;
   height: 2px;
   background-color: black;
@@ -699,7 +705,10 @@ img {
 .dropdown-article4,
 .dropdown-article5,
 .dropdown-article6,
-.dropdown-article7 {
+.dropdown-article7,
+.dropdown-article8,
+.dropdown-article9,
+.dropdown-article10 {
   /*background-color: dodgerblue;
   border: 1px solid dodgerblue;
   height: 0;
@@ -726,7 +735,10 @@ img {
 .dropdownburger-active4,
 .dropdownburger-active5,
 .dropdownburger-active6,
-.dropdownburger-active7 {
+.dropdownburger-active7,
+.dropdownburger-active8,
+.dropdownburger-active9,
+.dropdownburger-active10 {
   height: 800px;
 }
 
@@ -806,6 +818,36 @@ img {
 }
 
 .dropdowntoggle7 .dropdownline27 {
+  transform: rotate(45deg) translate(-2.5px, -6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle8 .dropdownline18 {
+  transform: rotate(-45deg) translate(-2.5px, 6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle8 .dropdownline28 {
+  transform: rotate(45deg) translate(-2.5px, -6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle9 .dropdownline19 {
+  transform: rotate(-45deg) translate(-2.5px, 6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle9 .dropdownline29 {
+  transform: rotate(45deg) translate(-2.5px, -6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle10 .dropdownline110 {
+  transform: rotate(-45deg) translate(-2.5px, 6px);
+  background-color: dodgerblue;
+}
+
+.dropdowntoggle10 .dropdownline210 {
   transform: rotate(45deg) translate(-2.5px, -6px);
   background-color: dodgerblue;
 }
