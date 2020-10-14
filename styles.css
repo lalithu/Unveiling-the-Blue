@@ -74,9 +74,9 @@ body {
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
   overflow-x: hidden;
-  height: 34px;
 }
 
 .right-side {
@@ -94,7 +94,7 @@ body {
   font-style: italic;
   margin-left: 30px;
   font-size: 1em;
-  font-weight: 200;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -158,7 +158,7 @@ body {
 .logo {
   height: 24px;
   border-bottom: 1px solid transparent;
-  transition: border-bottom 0.5s;
+  transition: all 0.5s;
 }
 
 .nav-link-wrapper a {
@@ -170,22 +170,18 @@ body {
 .logo a {
   color: black;
   text-decoration: none;
-  transition: color 0.5s;
+  transition: all 0.5s;
 }
 
 .nav-link-wrapper:hover {
   border-bottom: 2px solid dodgerblue;
 }
 
-.logo:hover {
-  border-bottom: 2px solid dodgerblue;
-}
+/*.logo a:hover {
+  text-shadow: 2px 2px 5px rgba(30, 144, 255, 0.5);
+} */
 
 .nav-link-wrapper a:hover {
-  color: dodgerblue;
-}
-
-.logo a:hover {
   color: dodgerblue;
 }
 
@@ -201,11 +197,19 @@ body {
   transition: 0.375s ease;
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1175px) {
   body {
     position: relative;
     scroll-behavior: auto;
     width: 100%;
+  }
+
+  .nav-link-wrapper > div {
+    border-bottom: none;
+  }
+
+  .nav-link-wrapper:hover {
+    border-bottom: none;
   }
 
   .right-side {
@@ -223,6 +227,7 @@ body {
     transition: all 1s ease;
     overflow-x: hidden;
     box-shadow: 0px 10px 60px dodgerblue;
+    border-bottom: 0px;
   }
 
   .right-side > div {
@@ -230,6 +235,7 @@ body {
     position: relative;
     overflow-x: hidden;
     height: 18px;
+    border-bottom: none;
   }
 
   .nav-link-wrapper a {
@@ -238,10 +244,6 @@ body {
     transition: color 1s;
     transition: all 1s;
     opacity: 0;
-  }
-
-  .nav-link-wrapper:hover {
-    border-bottom: 2px solid black;
   }
 
   .nav-link-wrapper a:hover {
@@ -259,7 +261,7 @@ body {
   }
 
   .nav-active {
-    height: 398px;
+    height: 399px;
   }
 
   .nav-active .nav-link-wrapper a {
@@ -310,7 +312,7 @@ body {
   }
 
   .nav-active {
-    height: 213px;
+    height: 214px;
   }
 
   .nav-active .nav-link-wrapper a {
