@@ -520,6 +520,7 @@ img {
 }
 
 .aBriefHistoryOfSpaceExploration,
+.aBriefHistoryOfAstronomy,
 .ourSolarSystem {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -548,7 +549,6 @@ img {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  text-transform: uppercase;
   letter-spacing: 0.0125rem;
   font-weight: 400;
   font-size: 1.375rem;
@@ -630,6 +630,10 @@ img {
     font-size: 2rem;
   }
 
+  .aBriefHistoryOfAstronomy span {
+    font-size: 2rem;
+  }
+
   .ourSolarSystem {
     font-size: 2rem;
   }
@@ -637,6 +641,10 @@ img {
 
 @media screen and (max-width: 670px) {
   .aBriefHistoryOfSpaceExploration span {
+    font-size: 1.75rem;
+  }
+
+  .aBriefHistoryOfAstronomy span {
     font-size: 1.75rem;
   }
 
@@ -658,6 +666,12 @@ img {
 @media screen and (max-width: 590px) {
   .aBriefHistoryOfSpaceExploration,
   .aBriefHistoryOfSpaceExploration span {
+    font-size: 1.5rem;
+    display: block;
+  }
+
+  .aBriefHistoryOfAstronomy,
+  .aBriefHistoryOfAstronomy span {
     font-size: 1.5rem;
     display: block;
   }
