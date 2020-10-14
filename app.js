@@ -145,6 +145,55 @@ var dropdownSlide10 = () => {
   });
 }; 
 
+var dropdownSlide11 = () => {
+  var dropdownburger = document.querySelector(".dropdownburger11");
+  var dropdown = document.querySelector(".dropdown-article11");
+  //Toggle Nav
+  dropdownburger.addEventListener("click", () => {
+    dropdown.classList.toggle("dropdownburger-active11");
+
+    //Burger Animation
+    dropdownburger.classList.toggle("dropdowntoggle11");
+  });
+}; 
+
+var dropdownSlide12 = () => {
+  var dropdownburger = document.querySelector(".dropdownburger12");
+  var dropdown = document.querySelector(".dropdown-article12");
+  //Toggle Nav
+  dropdownburger.addEventListener("click", () => {
+    dropdown.classList.toggle("dropdownburger-active12");
+
+    //Burger Animation
+    dropdownburger.classList.toggle("dropdowntoggle12");
+  });
+}; 
+
+var dropdownSlide13 = () => {
+  var dropdownburger = document.querySelector(".dropdownburger13");
+  var dropdown = document.querySelector(".dropdown-article13");
+  //Toggle Nav
+  dropdownburger.addEventListener("click", () => {
+    dropdown.classList.toggle("dropdownburger-active13");
+
+    //Burger Animation
+    dropdownburger.classList.toggle("dropdowntoggle13");
+  });
+}; 
+
+var dropdownSlide14 = () => {
+  var dropdownburger = document.querySelector(".dropdownburger14");
+  var dropdown = document.querySelector(".dropdown-article14");
+  //Toggle Nav
+  dropdownburger.addEventListener("click", () => {
+    dropdown.classList.toggle("dropdownburger-active14");
+
+    //Burger Animation
+    dropdownburger.classList.toggle("dropdowntoggle14");
+  });
+}; 
+
+
 const app = () => {
   navSlide();
   dropdownSlide();
@@ -158,6 +207,10 @@ const app = () => {
   dropdownSlide8();
   dropdownSlide9();
   dropdownSlide10();
+  dropdownSlide11();
+  dropdownSlide12();
+  dropdownSlide13();
+  dropdownSlide14();
 };
 
 app();
