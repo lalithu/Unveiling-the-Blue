@@ -89,7 +89,8 @@ body {
 }
 
 .nav-wrapper > .right-side > div {
-  font-family: nimbus;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: italic;
   margin-left: 30px;
   font-size: 1em;
@@ -98,7 +99,8 @@ body {
 }
 
 .nav-wrapper > .left-side-image > div {
-  font-family: nimbus-bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: italic;
   letter-spacing: 1.25;
   margin-right: 30px;
@@ -452,7 +454,8 @@ img {
 .aboutMe {
   margin: 5px;
   padding: 5px;
-  font-family: nimbus;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: italic;
   text-transform: uppercase;
   letter-spacing: 0.0125rem;
@@ -479,13 +482,12 @@ img {
 .aBriefHistoryOfSpaceExploration,
 .ourSolarSystem {
   text-align: center;
-  font-family: nimbus;
-  font-style: italic;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.0125rem;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 2.25rem;
-  text-decoration: underline dodgerblue;
 }
 
 .whereItAllBegan {
@@ -493,11 +495,11 @@ img {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-transform: uppercase;
-  font-style: italic;
   letter-spacing: 0.0125rem;
   font-weight: 400;
   font-size: 1.375rem;
-  text-decoration: underline orangered;
+  border-right: 37.5px solid dodgerblue;
+  border-left: 37.5px solid dodgerblue;
 }
 
 .theFifties,
@@ -505,32 +507,34 @@ img {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-style: italic;
   letter-spacing: 0.0125rem;
   font-weight: 400;
   font-size: 1.375rem;
-  text-decoration: underline orangered;
+  border-right: 37.5px solid dodgerblue;
+  border-left: 37.5px solid dodgerblue;
 }
 
 .article-title {
   margin: 0px;
   padding: 2px;
-  font-family: nimbus;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: italic;
   text-transform: uppercase;
   letter-spacing: 0.0125rem;
-  font-weight: 900;
+  font-weight: bolder;
   font-size: 1.75rem;
 }
 
 .year {
   margin: 0px;
   padding: 2px;
-  font-family: nimbus;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: italic;
   text-transform: uppercase;
   letter-spacing: 0.0125rem;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 1rem;
 }
 
@@ -565,16 +569,43 @@ img {
   line-height: 1.75;
 }
 
-@media screen and (max-width: 570px) {
-  .aBriefHistoryOfSpaceExploration {
+@media screen and (max-width: 750px) {
+  .aBriefHistoryOfSpaceExploration span {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .aBriefHistoryOfSpaceExploration span {
+    font-size: 1.75rem;
+  }
+
+  .article-title {
+    font-size: 1.5rem;
   }
 
   .whereItAllBegan,
   .theFifties,
   .theSixties {
     font-size: 1.25rem;
-    text-decoration: underline orangered;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .aBriefHistoryOfSpaceExploration,
+  .aBriefHistoryOfSpaceExploration span {
+    font-size: 1.5rem;
+    display: block;
+  }
+
+  .article-title {
+    font-size: 1.375rem;
+  }
+
+  .whereItAllBegan,
+  .theFifties,
+  .theSixties {
+    font-size: 1.125rem;
   }
 }
 
