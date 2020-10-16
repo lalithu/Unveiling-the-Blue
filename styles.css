@@ -197,7 +197,7 @@ body {
   transition: 0.375s ease;
 }
 
-@media screen and (max-width: 1175px) {
+@media screen and (max-width: 1240px) {
   body {
     position: relative;
     scroll-behavior: auto;
