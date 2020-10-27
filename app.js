@@ -10,6 +10,18 @@ const navSlide = () => {
   });
 };
 
+const darkMode = () => {
+  const burger = document.querySelector(".darkModeBurger");
+  const nav = document.querySelector(".site-wrapper");
+  //Toggle Nav
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("darkmode-active");
+
+    //Burger Animation
+    burger.classList.toggle("darkmodetoggle");
+  });
+};
+
 const app = () => {
   var dropdownSlide = () => {
     var dropdownburger = document.querySelector(".dropdownburger");
@@ -221,5 +233,6 @@ const app = () => {
   dropdownSlide14();  
 };
 
-navSlide()
+navSlide();
+darkMode();
 app();
