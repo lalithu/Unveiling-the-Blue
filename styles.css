@@ -762,7 +762,7 @@ body {
 .burger div {
   width: 20px;
   height: 2px;
-  background-color: #4040a1;
+  background-color: black;
   margin: 10px;
   transition: 0.375s ease;
 }
