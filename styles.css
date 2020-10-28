@@ -684,7 +684,7 @@ body {
   font-size: 1.25em;
   font-weight: bold;
   text-transform: uppercase;
-
+  z-index: 10000;
   padding: 4px;
   /* For More Cool Gradients */
   background: linear-gradient(
