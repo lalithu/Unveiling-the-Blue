@@ -70,30 +70,32 @@
       </div>
     </div>
 
-    <div class="contactform1">
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSdSqtVyYQKZ63idhF_HpqLORiQA3ZbMhLlYNx6-wC9pXYteDA/viewform?embedded=true"
-        width="700" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <div>
+      <h1 class="contactTitle">Contact</h1>
     </div>
 
-    <div class="contactform2">
-      <iframe <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSdSqtVyYQKZ63idhF_HpqLORiQA3ZbMhLlYNx6-wC9pXYteDA/viewform?embedded=true"
-        width="390" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
+    <article>
+      <form action="{%url 'about' %}" method="POST">
+        <h1 class="article-title">Name</h1>
+        <div class="name-input">
+          <input type="text" name="message-name" class="nameClass" placeholder="Your Name">
+        </div>
 
-    <div class="contactform3">
-      <iframe <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSdSqtVyYQKZ63idhF_HpqLORiQA3ZbMhLlYNx6-wC9pXYteDA/viewform?embedded=true"
-        width="375" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
+        <h1 class="article-title">Email</h1>
+        <div class="email-input">
+          <input type="email" name="message-email" class="emailClass" placeholder="Your Email">
+        </div>
 
-    <div class="contactform4">
-      <iframe <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSdSqtVyYQKZ63idhF_HpqLORiQA3ZbMhLlYNx6-wC9pXYteDA/viewform?embedded=true"
-        width="300" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
+        <h1 class="article-title">Message</h1>
+        <div class="message-textarea">
+          <textarea name="message" class="messageClass" placeholder="Your Message"></textarea>
+        </div>
 
+        <div class="col-12">
+          <button type="submit" class="button">Submit</button>
+        </div>
+      </form>
+    </article>
   </div>
 
   <div class="footer">
