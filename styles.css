@@ -763,10 +763,6 @@ body {
   color: dodgerblue;
 }
 
-.burgers {
-  display: none;
-}
-
 .burger {
   display: none;
 }
@@ -954,10 +950,20 @@ body {
   padding: 6px;
 }
 
+.fa {
+  font-size: 24px;
+}
+
 @media screen and (max-width: 340px) {
   .nav-wrapper > .left-side-image > div {
     letter-spacing: 1.25;
-    font-size: 1.15em;
+    font-size: 1em;
+  }
+
+  .logo {
+    height: 18px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s;
   }
 
   #footerText {
@@ -2144,12 +2150,24 @@ pluto = 2,170,000 hours /877 = 2474.34436s
   }
 
   .article-para {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .purpose,
   .aboutMe {
-    font-size: 1.375rem;
+    font-size: 1.125rem;
+  }
+
+  .whereItAllBegan,
+  .theFifties,
+  .theSixties,
+  .theSeventies,
+  .theEighties,
+  .the2000s,
+  .devInAstronomyAndAstroPhysics,
+  .myDevPortfolio,
+  .devGalaxies {
+    font-size: 1rem;
   }
 }
 
