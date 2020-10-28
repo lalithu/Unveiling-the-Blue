@@ -202,7 +202,7 @@
     1679px 1214px #fff, 765px 434px #fff, 405px 1809px #fff, 156px 1459px #fff,
     1192px 1537px #fff, 274px 1478px #fff, 942px 84px #fff, 174px 338px #fff,
     400px 111px #fff, 948px 886px #fff, 1277px 677px #fff, 705px 1189px #fff;
-  animation: animStar 50s linear infinite;
+  animation: nightSky 50s linear infinite;
 }
 #stars:after {
   content: " ";
@@ -448,7 +448,7 @@
     808px 1691px #fff, 1808px 453px #fff, 1483px 476px #fff, 1275px 60px #fff,
     773px 1959px #fff, 1922px 481px #fff, 266px 1819px #fff, 156px 1826px #fff,
     231px 1059px #fff, 1535px 385px #fff, 1241px 1436px #fff;
-  animation: animStar 100s linear infinite;
+  animation: nightSky 100s linear infinite;
 }
 #stars2:after {
   content: " ";
@@ -543,7 +543,7 @@
     1189px 1598px #fff, 1722px 1761px #fff, 1234px 1953px #fff,
     305px 1968px #fff, 1872px 472px #fff, 1165px 304px #fff, 216px 1666px #fff,
     907px 648px #fff, 844px 1305px #fff;
-  animation: animStar 150s linear infinite;
+  animation: nightSky 150s linear infinite;
 }
 #stars3:after {
   content: " ";
@@ -581,7 +581,7 @@
     907px 648px #fff, 844px 1305px #fff;
 }
 
-@keyframes animStar {
+@keyframes nightSky {
   from {
     transform: translateY(0px);
   }
