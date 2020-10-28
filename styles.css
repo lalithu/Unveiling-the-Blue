@@ -950,10 +950,6 @@ body {
   padding: 6px;
 }
 
-.fa {
-  font-size: 24px;
-}
-
 @media screen and (max-width: 340px) {
   .nav-wrapper > .left-side-image > div {
     letter-spacing: 1.25;
