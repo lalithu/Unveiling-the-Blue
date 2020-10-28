@@ -2209,7 +2209,9 @@ textarea {
   background-color: transparent;
   color: white;
   box-shadow: 0px 0px 40px dodgerblue;
+  -webkit-box-shadow: 0px 0px 40px dodgerblue;
   transition: all 0.5s;
+  -webkit-appearance: none;
 }
 
 textarea {
