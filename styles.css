@@ -2212,6 +2212,8 @@ textarea {
   -webkit-box-shadow: 0px 0px 40px dodgerblue;
   transition: all 0.5s;
   -webkit-appearance: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
 }
 
 textarea {
