@@ -2296,3 +2296,25 @@ input:hover::-webkit-input-placeholder {
 textarea:hover::-webkit-input-placeholder {
   color: dodgerblue;
 }
+
+@media screen and (max-width: 420px) {
+  input:hover {
+    background: inherit;
+    color: inherit;
+    box-shadow: inherit;
+  }
+
+  textarea:hover {
+    background: inherit;
+    color: inherit;
+    box-shadow: inherit;
+  }
+
+  input:hover::-webkit-input-placeholder {
+    color: inherit;
+  }
+
+  textarea:hover::-webkit-input-placeholder {
+    color: inherit;
+  }
+}
